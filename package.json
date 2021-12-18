@@ -1,0 +1,43 @@
+{
+  "name": "@ictrobot/aoc-leaderboard",
+  "version": "0.1.0",
+  "description": "Advent of Code private leaderboard interface",
+  "keywords": [
+    "advent of code",
+    "advent-of-code",
+    "aoc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ictrobot/aoc-leaderboard.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ethan Jones",
+    "email": "ictrobot@outlook.com",
+    "url": "https://github.com/ictrobot/"
+  },
+  "main": "dist/leaderboard.js",
+  "types": "dist/leaderboard.d.ts",
+  "bin": {
+    "aoc-leaderboard": "dist/aoc-leaderboard"
+  },
+  "files": [
+    "dist/",
+    "src/*.ts"
+  ],
+  "scripts": {
+    "build": "tsc && rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/node": "^16.11.11",
+    "rollup": "^2.61.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
